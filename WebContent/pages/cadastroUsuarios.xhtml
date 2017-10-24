@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+</h:head>
+<h:body>
+	<h:form>
+	
+	
+	<div align="center">
+	<h:outputText value="Cadastro de usuario" />
+	</div>
+	
+	<fieldset>
+	<div align="left">
+	<p:outputLabel value="Nome:" ></p:outputLabel>
+	<h:inputText value="#{cadastroUsuariosBean.nome}"></h:inputText>
+	</div>
+	</fieldset>
+	<br></br>
+	
+	<fieldset>
+	<div align="left">
+	<p:outputLabel value="Email:" ></p:outputLabel>
+	<h:inputText value="#{cadastroUsuariosBean.email}"></h:inputText>
+	</div>
+	</fieldset>
+	<br></br>
+	
+	
+	<fieldset>
+	<div align="left">
+	<p:outputLabel value="Senha:" ></p:outputLabel>
+	<h:inputSecret value="#{cadastroUsuariosBean.senha}"> </h:inputSecret>
+	</div>
+	</fieldset>
+	<br></br>
+	
+	
+	<fieldset>
+	<div align="left">
+	<p:outputLabel value="Confirmar Senha:" ></p:outputLabel>
+	<h:inputSecret value="#{cadastroUsuariosBean.senhaConfirma}"> </h:inputSecret>
+	</div>
+	</fieldset>
+	<br></br>
+	
+	
+	<fieldset>
+	<div align="left">
+	<p:outputLabel value="Telefone:" ></p:outputLabel>
+	<h:inputText value="#{cadastroUsuariosBean.telefone}"></h:inputText>
+	</div>
+	</fieldset>
+	
+	<br></br>
+	<div align="center">
+	<h:commandButton action="#{cadastroUsuariosBean.cadastrarUsuario()}" value="Cadastrar" />
+	</div>
+	
+	
+	</h:form>
+
+
+</h:body>
+</html>
