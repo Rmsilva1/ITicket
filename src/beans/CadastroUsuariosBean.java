@@ -105,7 +105,4 @@ public class CadastroUsuariosBean implements Serializable {
 	public void setSenhaConfirma(String senhaConfirma) {
 		this.senhaConfirma = senhaConfirma;
 	}
-	
-	
-
 }
