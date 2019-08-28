@@ -44,8 +44,6 @@ public class CadastroUsuariosBean implements Serializable {
 			usuario.setSenha(senha);
 			usuario.setTelefone(telefone);
 			usuarioService.cadastrarUsuario(usuario);
-		}else {
-			
 		}
 	}
 	
