@@ -33,7 +33,7 @@ public class CadastroUsuariosBean implements Serializable {
 	}
 	
 	public Boolean confirmaSenha() {
-		return senha.equals(senhaConfirma)? true : false;
+		return senha.equals(senhaConfirma);
 	}
 	
 	public void cadastrarUsuario() {
